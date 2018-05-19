@@ -1,0 +1,305 @@
+// Page header
+.front-hero {
+    background: url('http://localhost/wordpress/wp-content/uploads/2018/05/fletcher.jpg') bottom center;
+    .marketing {
+      @include xy-grid-container(55rem);
+      @include xy-grid;
+    }
+    .marketing h1{
+      background-color: rgba(0,0,0,0.7);
+      padding: 20px;
+      color: #fff;
+    }
+    @include breakpoint(small) {
+      background: url('http://localhost/wordpress/wp-content/uploads/2018/05/fletcher.jpg') bottom center;
+      background-size: cover;
+      background-position: bottom;
+    //   padding: rem-calc(65%) 0;
+      margin: 0 0 rem-calc(32);
+      height: 20vh;
+      position: relative;
+      text-align: left;
+    }
+  
+    @include breakpoint(medium) {
+      background: url('http://localhost/wordpress/wp-content/uploads/2018/05/fletcher.jpg') bottom center;
+      background-size: cover;
+      background-position: center;
+      height: 100vh;
+      // margin: 0 0 rem-calc(72);
+    }
+  
+    .watch {
+      @include breakpoint(small) {
+        @include xy-cell(7);
+      }
+  
+      @include breakpoint(medium) {
+        @include xy-cell(12);
+      }
+  
+      a {
+        color: #B4C9D1;
+        cursor: pointer;
+        font-weight: 400;
+        margin-right: rem-calc(20);
+      }
+  
+      a:hover {
+        color: #fff;
+      }
+  
+    }
+    .tagline {
+      @include breakpoint(small) {
+        @include xy-cell(8);
+      }
+  
+      @include breakpoint(medium) {
+        @include xy-cell(5);
+        padding-top: 6rem;
+      }
+    }
+    h1 {
+      color: #2e2e2e;
+      font-weight: 500;
+  
+      @include breakpoint(small) {
+        font-size: 1.2rem;
+      }
+  
+      @include breakpoint(medium) {
+        font-size: 1.875rem;
+      }
+    }
+  
+    h4 {
+      color: #2e2e2e;
+      font-weight: 300;
+      font-size: 1.3125rem;
+    }
+  
+    .download {
+      margin-top: rem-calc(20);
+    }
+  }
+  
+  // Intro
+  .intro {
+    @include xy-grid-container;
+    @include xy-grid;
+  
+    .fp-intro {
+      @include breakpoint(small) {
+        @include xy-cell(12);
+      }
+  
+      @include breakpoint(medium) {
+        @include xy-cell(10);
+        @include xy-cell-offset(1);
+  
+        h2 {
+          font-weight: 300;
+          margin-bottom: 1.5rem;
+        }
+  
+        h4 {
+          font-size: 1.125rem;
+          line-height: 1.6;
+          color: #777;
+          margin-bottom: 2rem;
+        }
+      }
+    }
+  }
+  
+  // Section divider
+  .section-divider {
+    @include xy-grid-container;
+    @include xy-grid;
+  
+    hr {
+      @include xy-cell(12);
+      @extend .dotted;
+      box-sizing: border-box;
+    }
+  }
+  
+  // Benefits
+  .benefits {
+    @include xy-grid-container;
+    @include xy-grid;
+    text-align: center;
+  
+    header {
+      @include xy-cell(12);
+  
+      h2 {
+        font-weight: 300;
+      }
+  
+      h4 {
+        font-size: 1.125rem;
+        line-height: 1.6;
+        color: #777;
+      }
+    }
+  
+    .semantic,
+    .responsive,
+    .customizable,
+    .professional {
+      @include breakpoint(small) {
+        @include xy-cell(12);
+      }
+  
+      @include breakpoint(medium) {
+        @include xy-cell(3);
+      }
+  
+      img {
+        padding: 1.25rem;
+        margin: 1rem auto 0 auto;
+      }
+  
+      h3 {
+        color: #0a0a0a;
+        font-weight: 300;
+        font-size: 1.75rem;
+      }
+  
+      p {
+        font-size: 0.9375rem;
+      }
+    }
+  
+    .why-foundation {
+      @include xy-cell(12);
+      margin-top: 4rem;
+    }
+  }
+  .top-bar, .top-bar ul {
+    background-color: transparent;
+  }
+  .top-bar .menu a{
+    color: #2e2e2e;
+    font-family: 'Montserrat', sans-serif;
+  }
+  .menu .align-center{
+    background: transparent;
+  }
+  .align-center{
+    padding-top: 20px;
+  }
+  .menu .is-active > a {
+    background: transparent;
+    color: #000000;
+  }
+  .top-bar .top-bar-title a {
+    font-size: 1rem;
+    font-family: 'Montserrat', sans-serif;
+    font-weight: 700;
+    color: #2e2e2e;
+    padding-left: 1rem;
+    line-height: 1.8;
+  }
+  .entry-title{
+    display: none;
+  }
+  .container-wrapper{
+    // margin-top: -10vh;
+    // position: relative;
+  }
+  .main-content{
+    // margin-top: -20vh;
+    background-color: #ffffff;
+    border: 1px solid;
+    border-color: #545454;
+    padding: 50px;
+    padding-bottom: 120px;
+    z-index: 1;
+    font-family: 'Lato', sans-serif;
+  }
+  .main-grid .sidebar{
+    // margin-top: -20vh;
+    background-color: #ffffff;
+    border: 1px solid;
+    border-color: #545454;
+    padding: 50px;
+    margin-top: 0;
+    z-index: 1;
+  }
+  .front-hero h1{
+    font-family: 'Montserrat', sans-serif;
+  }
+  .entry-content h3{
+    font-family: 'Montserrat', sans-serif;
+  }
+  .home-statement-header{
+    font-family: 'Montserrat', sans-serif;
+    text-align: center;
+    padding-bottom: 30px;
+    padding-top: 30px;
+  }
+  .donate-btn{
+    background-color: gold;
+    border-radius: 12px;
+    color: black;
+    padding: 5px 10px;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    font-size: 16px;
+  }
+  .donate-btn-container{
+    width: 100px;
+    margin: 0 auto;
+    padding-top: 20px;
+  }
+  .cta-container{
+    width: 30vw;
+    height: 20px;
+    margin: 0 auto;
+    margin-top: 30px;
+    text-align: center;
+  }
+  .cta-container .button{
+    margin: 0;
+  }
+  // .cta-container a{
+  //   padding: 5px;
+  //   margin-left: 20px;
+  //   margin-right: 20px;
+  // }
+  // .cta-btn-a{
+  //   border: 1px solid;
+  //   border-color: rgba(10, 10, 10, 0.25);
+  //   margin-left: 20px;
+  //   margin-right: 20px;
+    // padding-left: 10px;
+    // padding-right: 10px;
+  //   padding-top: 5px;
+  //   padding-bottom: 5px;
+  // }
+  // .cta-btn-b{
+  //   border: 1px solid;
+  //   border-color: rgba(10, 10, 10, 0.25);
+  //   margin-left: 20px;
+  //   margin-right: 20px;
+  //   padding-top: 5px;
+  //   padding-bottom: 5px;
+  // }
+  // .cta-btn-cnr{
+  //   justify-content: center;
+  //   display: flex;
+  //   flex-direction: row;
+  // }
+  .callout {
+    position: relative;
+    margin: 0 0 1rem 0;
+    padding: 1rem;
+    border: 1px solid #545454;
+    border-radius: 0;
+    background-color: white;
+    color: #0a0a0a;
+  }
