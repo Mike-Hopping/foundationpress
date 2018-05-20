@@ -210,6 +210,17 @@
     // margin-top: -10vh;
     // position: relative;
   }
+  .home-logo{
+    background: url('http://localhost/wordpress/wp-content/uploads/2018/05/headText.gif') no-repeat;
+    width: 175px;
+    height: 110px;
+    margin: 0 auto;
+    // margin-top: 20px;
+    margin-bottom: 20px;
+  }
+  .featured-hero{
+    margin-bottom: 50px;
+  }
   .main-content{
     // margin-top: -20vh;
     background-color: #ffffff;
@@ -261,6 +272,9 @@
     margin: 0 auto;
     margin-top: 30px;
     text-align: center;
+  }
+  .cta-container p{
+    font-family: 'Montserrat', sans-serif;
   }
   .cta-container .button{
     margin: 0;

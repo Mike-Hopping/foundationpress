@@ -101,4 +101,3 @@ function my_custom_sidebar() {
     );
 }
 add_action( 'widgets_init', 'my_custom_sidebar' );
-

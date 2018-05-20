@@ -32,7 +32,7 @@ $home_donate_text = get_theme_mod('artista_home_donate_text')
 				width: 175px;
 				height: 110px;
 				margin: 0 auto;
-				margin-top: 20px;
+				/* margin-top: 20px; */
 				margin-bottom: 20px;
 			}
 			@media only screen and (max-width: 1280px){
