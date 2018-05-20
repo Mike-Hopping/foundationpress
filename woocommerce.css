@@ -1,0 +1,18 @@
+.woocommerce .woocommerce-breadcrumb{
+    color: #fff;
+}
+.woocommerce .woocommerce-breadcrumb a{
+    color: #fff;
+}
+.woocommerce-products-header{
+    background-color: transparent;
+}
+.woocommerce div.product .woocommerce-tabs ul.tabs li.active a {
+    color: #000;
+    text-shadow: inherit;
+}
+.woocommerce div.product form.cart .button {
+    vertical-align: middle;
+    float: left;
+    margin-left: 20px;
+}

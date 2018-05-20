@@ -1,0 +1,27 @@
+.contact-container{
+    display: flex;
+   }
+   .map-container{
+    flex: 1
+   }
+   .contact-info{
+    padding-left: 100px;
+    flex: 1
+   }
+   .contact-info h3{
+    text-align: left;
+    margin-top: 50px;
+   }
+   .contact-info a{
+    padding-top: 50px;
+    font-size: 1.5em;
+    color: #000;
+   }
+   .map-container{
+    margin-top: 50px;
+   }
+   #map-container{
+    width: 500px;
+    height: 500px;
+    margin-top: 50px;
+   }

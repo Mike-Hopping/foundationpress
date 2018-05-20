@@ -10,7 +10,14 @@
  * @since FoundationPress 1.0.0
  */
 
-get_header(); ?>
+if ( has_post_thumbnail( $post->ID ) ) : ?>
+	<header class="featured-hero" role="banner" data-interchange="[<?php the_post_thumbnail_url( 'featured-small' ); ?>, small], [<?php the_post_thumbnail_url( 'featured-medium' ); ?>, medium], [<?php the_post_thumbnail_url( 'featured-large' ); ?>, large], [<?php the_post_thumbnail_url( 'featured-xlarge' ); ?>, xlarge]">
+    <?php get_header(); ?>
+    <a href="http://localhost/wordpress/"><div class="home-logo"></div></a>
+</header>
+<?php endif;
+
+?>
 
 <?php get_template_part( 'template-parts/featured-image' ); ?>
 <div class="main-container">
@@ -21,7 +28,6 @@ get_header(); ?>
 				<?php comments_template(); ?>
 			<?php endwhile; ?>
 		</main>
-		<?php get_sidebar(); ?>
 	</div>
 </div>
 <?php
