@@ -10,8 +10,9 @@ if ( has_post_thumbnail( $post->ID ) ) : ?>
     <a href="http://localhost/wordpress/"><div class="home-logo"></div></a>
 </header>
 <?php endif;
-
+get_header()
 ?>
+<div class="main-container">
 <div class="main-grid">
     <main class="main-content">
     <?php if ( have_posts() ) : ?>
@@ -41,5 +42,5 @@ if ( has_post_thumbnail( $post->ID ) ) : ?>
     <?php get_sidebar(); ?>
 
 </div>
-            
+</div>         
 <?php get_footer(); ?>

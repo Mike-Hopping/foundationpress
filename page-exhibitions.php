@@ -13,7 +13,7 @@ if ( has_post_thumbnail( $post->ID ) ) : ?>
 get_header()
 ?>
 <div class="main-container">
-<div class="main-grid sidebar-right">
+<div class="main-grid">
     <main class="main-content">
 <section>
     <?php

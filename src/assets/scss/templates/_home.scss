@@ -182,7 +182,7 @@
     background-color: transparent;
   }
   .top-bar .menu a{
-    color: #2e2e2e;
+    color: #000;
 
   }
   .menu .align-center{
@@ -199,7 +199,7 @@
     font-size: 1rem;
     font-family: 'Grand Hotel', cursive;
     font-weight: 700;
-    color: #2e2e2e;
+    color: #000;
     padding-left: 1rem;
     line-height: 1.8;
   }
@@ -212,11 +212,23 @@
   }
   .home-logo{
     background: url('http://localhost/wordpress/wp-content/uploads/2018/05/headText.gif') no-repeat;
-    width: 175px;
+    background-position: center;
+    width: 100%;
     height: 110px;
-    margin: 0 auto;
-    // margin-top: 20px;
-    margin-bottom: 20px;
+    position: absolute;
+  }
+  @media only screen and (max-width: 1280px){
+    .home-logo{
+      margin-top:0;
+    }
+    .cta-container{
+      margin-top: 10px;
+    }
+  }
+  @media only screen and (max-width: 786px){
+    .home-logo{
+    display: none;
+    }
   }
   .featured-hero{
     margin-bottom: 50px;
@@ -290,4 +302,8 @@
   }
   .main-container .container-wrapper .main-content{
     width: calc(66.66667% - 1.875rem);
+  }
+  .dropdown.menu .is-active > a {
+    background: transparent;
+    color: #1779ba;
   }

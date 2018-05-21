@@ -27,14 +27,13 @@ $home_donate_text = get_theme_mod('artista_home_donate_text')
 	$selectedBg = "$bg[$i]";
 	?>
 	<style type="text/css">
-	.home-logo{
+	/* .home-logo{
 				background: url('http://localhost/wordpress/wp-content/uploads/2018/05/headText.gif') no-repeat;
 				width: 175px;
 				height: 110px;
 				margin: 0 auto;
-				/* margin-top: 20px; */
 				margin-bottom: 20px;
-			}
+			} */
 			@media only screen and (max-width: 1280px){
 				.home-logo{
 					margin-top:0;
@@ -54,6 +53,7 @@ $home_donate_text = get_theme_mod('artista_home_donate_text')
 			width: 80vw;
 			height: 60vh;
 			margin: 0 auto;
+			margin-top: 130px;
 			}
 			@media only screen and (max-width: 1280px){
 				.hero-image{
@@ -87,21 +87,15 @@ $home_donate_text = get_theme_mod('artista_home_donate_text')
 			</div>
 			<div class="cta-container">
 				<div class="callout">
-					<!-- <h5>Welcome to Artists Alliance</h5> -->
 					<p>View Upcoming Exhibitions and Opportunities</p>
-					<!-- <div class="cta-btn-cnr"> -->
-					<!-- <div class="cta-btn-a"> -->
 					<a href="#0" class="button">Exhibitions</a>
-					<!-- </div> -->
-					<!-- <div class="cta-btn-b" -->
 					<a href="#0" class="button">Opportunities</a>
-					<!-- </div> -->
-					<!-- </div>  -->
 				</div>
 			</div>
 </header>
 
 <div class="main-container">
+
 <div class="container-wrapper">
 
 	<div class="main-grid sidebar-right">
