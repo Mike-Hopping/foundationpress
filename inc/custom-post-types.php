@@ -7,11 +7,11 @@
  */
 
 function artista_create_post_types(){
-    register_post_type('artista_service',
+    register_post_type('artista_exhibition',
         array(
             'labels' => array(
-            'name' => __('Services'),
-                'singular_name' => __('Service')
+            'name' => __('Exhibitions'),
+                'singular_name' => __('Exhibition')
             ),
             'public' => true,
             'has_archive' => true,
@@ -19,6 +19,7 @@ function artista_create_post_types(){
             'supports' => array(
                 'editor',
                 'title',
+                'content',
                 'thumbnail'
                 )
             )
@@ -26,12 +27,12 @@ function artista_create_post_types(){
     // create new taxonomy for custom post types
     register_taxonomy(
         'media',
-        'artista_service',
+        'artista_opportunity',
         array(
-            'label' => __('Repairs'),
+            'label' => __('Opportunities'),
             'labels' => array(
-                'name' => __('Repairs'),
-                'singular_name' => __('Repair')
+                'name' => __('Opportunities'),
+                'singular_name' => __('Opportunity')
             )
         )
     );

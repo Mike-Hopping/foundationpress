@@ -15,16 +15,15 @@ if ( has_post_thumbnail( $post->ID ) ) : ?>
     <a href="http://localhost/wordpress/"><div class="home-logo"></div></a>
 </header>
 <?php endif;
-
 ?>
 <div class="main-container">
 	<div class="main-grid">
 		<main class="main-content">
-			<div class="woocommerce">
+		<div class="woocommerce">
 				<?php woocommerce_content(); ?>
-			</div>
+				</div>
 		</main>
-	<!-- <?php get_sidebar(); ?> -->
-	</div>
+		<?php get_sidebar(); ?>
+		</div>
 </div>
 <?php get_footer();
