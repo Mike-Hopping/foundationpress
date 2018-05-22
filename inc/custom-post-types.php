@@ -1,11 +1,8 @@
 <?php
-/**
- * Created by PhpStorm.
- * User: 845856208
- * Date: 12/04/2018
- * Time: 1:30 PM
+/*
+Template name: custom-post-types
  */
-
+//EXHIBITIONS
 function artista_create_post_types(){
     register_post_type('artista_exhibition',
         array(
@@ -24,17 +21,34 @@ function artista_create_post_types(){
                 )
             )
             );
-    // create new taxonomy for custom post types
-    register_taxonomy(
-        'media',
-        'artista_opportunity',
+            register_post_type('artista_opportunity',
         array(
-            'label' => __('Opportunities'),
             'labels' => array(
-                'name' => __('Opportunities'),
+            'name' => __('Opportunities'),
                 'singular_name' => __('Opportunity')
+            ),
+            'public' => true,
+            'has_archive' => true,
+            'menu_position' => 5,
+            'supports' => array(
+                'editor',
+                'title',
+                'content',
+                'thumbnail'
+                )
             )
-        )
+            // );
+    // create new taxonomy for custom post types
+    // register_taxonomy(
+    //     'media',
+    //     'artista_opportunity',
+    //     array(
+    //         'label' => __('Opportunities'),
+    //         'labels' => array(
+    //             'name' => __('Opportunities'),
+    //             'singular_name' => __('Opportunity')
+    //         )
+    //     )
     );
 }
 

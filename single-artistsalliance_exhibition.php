@@ -1,9 +1,6 @@
 <?php
-/**
- * Created by PhpStorm.
- * User: 845856208
- * Date: 13/04/2018
- * Time: 12:31 PM
+/*
+ Template Name: single-artistsalliance_exhibition
  */
 ?>
 <?php get_header(); ?>
