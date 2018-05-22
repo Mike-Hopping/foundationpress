@@ -12,6 +12,33 @@ $home_about_text = get_theme_mod('artista_home_about_text');
 $home_donate_text = get_theme_mod('artista_home_donate_text')
 ?>
 	<div class="hero-image">
+		<?php
+		$bg = array('colin-1.jpg', 'Fiona-Gray-Flight-of-Light-Promo-Image-1024x714.jpg', 'coffee-perhaps.jpg', 'act-of-passage.jpg', 'Chora-Carleton-watercolour-1024x576.jpg', 'taniwha.jpg', 'Laura-Papple.jpg' ); // array of filenames
+		$i = rand(0, count($bg)-1);
+		$selectedBg = "$bg[$i]";
+		?>
+		
+		<style>
+		.hero-image{
+			background: url(http://localhost/wordpress/wp-content/uploads/2018/05/<?php echo $selectedBg; ?>)  no-repeat;
+			background-size: cover;
+			width: 80vw;
+			height: 60vh;
+			margin: 0 auto;
+			margin-top: 130px;
+			}
+			@media only screen and (max-width: 1280px){
+			.hero-image{
+			height: 50vh;
+			}
+			}
+			@media only screen and (max-width: 768px){
+			.hero-image{
+			height: 40vh;
+			}
+			}
+		</style>
+		
 		<div class="marketing">
 		<div class="tagline">
 		<!-- <?php 
@@ -19,16 +46,16 @@ $home_donate_text = get_theme_mod('artista_home_donate_text')
 		$i = rand(0, count($txt)-1); 
 		$selectedTxt = "$txt[$i]";
 		?> -->
-			<h1><?php echo $selectedTxt; ?></h1>
-			<h4 class="subheader"><?php bloginfo( 'description' ); ?></h4>
+			<!-- <h1><?php echo $selectedTxt; ?></h1>
+			<h4 class="subheader"><?php bloginfo( 'description' ); ?></h4> -->
 		</div>
 		</div>
-		</div>
+	</div>
 		<div class="cta-container">
 			<div class="callout">
 				<p>View Upcoming Exhibitions and Opportunities</p>
-					<a href="#0" class="button">Exhibitions</a>
-					<a href="#0" class="button">Opportunities</a>
+					<a href="http://localhost/wordpress/exhibitions/" class="button">Exhibitions</a>
+					<a href="http://localhost/wordpress/opportunities/" class="button">Opportunities</a>
 			</div>
 		</div>
 </header>
@@ -60,15 +87,36 @@ $home_donate_text = get_theme_mod('artista_home_donate_text')
 				<div class="donate-btn-container">
 				<button type="button" class="donate-btn">Donate</button>
 				</div>
+		<section>
+			<?php
+			$args = array(
+				'post_type' => 'artista_exhibition', // Your custom post type
+				'posts_per_page' => '4', // Change the number to whatever you wish
+				'order_by' => 'date', // Some optional sorting
+				'order' => 'ASC', 
+				);
+				$new_query = new WP_Query ($args);
+				if ($new_query->have_posts()) {
+					while($new_query->have_posts()){
+						$new_query->the_post();
+						the_title();
+						the_post_thumbnail('thumbnail');
+						// Get a list of post's categories
+						$categories = get_the_category($post->ID);
+						foreach ($categories as $category) {
+							echo $category->name;
+						}
+					}
+				}
+				wp_reset_postdata();
+			?>
+		</section>
 		</main>
+		
 		<?php get_sidebar(); ?>
 	</div>
 </div>
 </div>
 <?php get_footer(); ?>
-	<!-- <?php
-	$bg = array('colin-1.jpg', 'Fiona-Gray-Flight-of-Light-Promo-Image-1024x714.jpg', 'coffee-perhaps.jpg', 'act-of-passage.jpg', 'Chora-Carleton-watercolour-1024x576.jpg', 'taniwha.jpg', 'Laura-Papple.jpg' ); // array of filenames
-	$i = rand(0, count($bg)-1);
-	$selectedBg = "$bg[$i]";
-	?> -->
+	
 
