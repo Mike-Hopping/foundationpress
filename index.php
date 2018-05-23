@@ -17,6 +17,7 @@
 <header class="featured-hero" role="banner" data-interchange="[http://localhost/wordpress/wp-content/uploads/2018/05/Laura-Papple-640x200.jpg, small], [http://localhost/wordpress/wp-content/uploads/2018/05/Laura-Papple-1024x400.jpg, medium], [http://localhost/wordpress/wp-content/uploads/2018/05/Laura-Papple-1024x400.jpg, large], [http://localhost/wordpress/wp-content/uploads/2018/05/Laura-Papple-1024x400.jpg, xlarge]" data-resize="nnnflm-interchange" id="nnnflm-interchange" style="background-image: url(&quot;http://localhost/wordpress/wp-content/uploads/2018/05/Laura-Papple-1024x400.jpg&quot;);" data-events="resize">
 <?php get_header(); ?>
 </header>
+<div class="woocommerce">
 <div class="main-container">
 <div class="main-grid">
 	<main class="main-content">
@@ -49,4 +50,5 @@
 
 </div>
 </div>
+		</div>
 <?php get_footer();

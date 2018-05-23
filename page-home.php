@@ -12,12 +12,6 @@ $home_about_text = get_theme_mod('artista_home_about_text');
 $home_donate_text = get_theme_mod('artista_home_donate_text')
 ?>
 	<div class="hero-image">
-		<!-- <?php
-		$bg = array('colin-1.jpg', 'Fiona-Gray-Flight-of-Light-Promo-Image-1024x714.jpg', 'coffee-perhaps.jpg', 'act-of-passage.jpg', 'Chora-Carleton-watercolour-1024x576.jpg', 'taniwha.jpg', 'Laura-Papple.jpg' ); // array of filenames
-		$i = rand(0, count($bg)-1);
-		$selectedBg = "$bg[$i]";
-		?> -->
-		
 		<?php
 		$args = array(
 		$loop = new WP_Query(array(
@@ -29,19 +23,10 @@ $home_donate_text = get_theme_mod('artista_home_donate_text')
 		?>
 		<?php while ( $loop->have_posts() ) : $loop->the_post(); ?>
 		<?php the_post_thumbnail('featured-large' ); ?>
-		
-
 		<div class="marketing">
 		<div class="tagline">
 		<h1><?php the_title(); ?></h1>
 		<?php endwhile; ?>
-		<!-- <?php 
-		$txt = array("Colin McCahon | Kitchener St", "Fiona Gray | Flight of Light", "Erica Van Zon | Coffee Perhaps", "Acts of Passage | Te Tuhi Offsite", "Chora Luz Carleton | Gloaming", "Owen Mapp | Dragons & Taniwha", "Kirsty Lillico |Happy Together" ); // array of filenames
-		$i = rand(0, count($txt)-1); 
-		$selectedTxt = "$txt[$i]";
-		?> -->
-			<!-- <h1><?php echo $selectedTxt; ?></h1>
-			<h4 class="subheader"><?php bloginfo( 'description' ); ?></h4> -->
 		</div>
 		</div>
 	</div>
@@ -79,31 +64,10 @@ $home_donate_text = get_theme_mod('artista_home_donate_text')
 					echo wpautop($home_donate_text);
 				endif; ?>
 				<div class="donate-btn-container">
-				<a href="http://localhost/wordpress/donate/" button type="button" class="donate-btn">Donate</button></a>
+				<a href="http://localhost/wordpress/join/" button type="button" class="donate-btn">Donate</button></a>
 				</div>
 		<section>
-			<?php
-			$args = array(
-				'post_type' => 'artista_exhibition', // Your custom post type
-				'posts_per_page' => '4', // Change the number to whatever you wish
-				'order_by' => 'date', // Some optional sorting
-				'order' => 'ASC', 
-				);
-				$new_query = new WP_Query ($args);
-				if ($new_query->have_posts()) {
-					while($new_query->have_posts()){
-						$new_query->the_post();
-						the_title();
-						the_post_thumbnail('thumbnail');
-						// Get a list of post's categories
-						$categories = get_the_category($post->ID);
-						foreach ($categories as $category) {
-							echo $category->name;
-						}
-					}
-				}
-				wp_reset_postdata();
-			?>
+			
 		</section>
 		</main>
 		
