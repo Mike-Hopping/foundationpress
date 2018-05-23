@@ -6,8 +6,8 @@ Template Name: Home
 <header class="front-hero" role="banner">
 	<?php get_header(); 
 $home_statement_text = get_theme_mod('artista_home_statement_text');
-$home_image_one = get_theme_mod('artista_home_statement_image_one');
-$home_image_two = get_theme_mod('artista_home_statement_image_two');
+// $home_image_one = get_theme_mod('artista_home_statement_image_one');
+// $home_image_two = get_theme_mod('artista_home_statement_image_two');
 $home_about_text = get_theme_mod('artista_home_about_text');
 $home_donate_text = get_theme_mod('artista_home_donate_text')
 ?>

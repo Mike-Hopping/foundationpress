@@ -147,39 +147,39 @@ function artista_customize_register($wp_customize){
 
     //Home Image 1
 
-    $wp_customize->add_section('artista_home_statement_image_one_section',
-        array(
-            'title' =>__('Home Statement Image 1'),
-            'priority' => 30
-        ));
-    $wp_customize->add_setting('artista_home_statement_image_one', array());
-    $wp_customize->add_control(new WP_Customize_Image_Control(
-        $wp_customize,
-        'artista_home_statement_image_one_ctrl',
-        array(
-            'section' => 'artista_home_statement_image_one_section',
-            'label' => __('Home Image 1'),
-            'settings' => 'artista_home_statement_image_one'
-        ),
+    // $wp_customize->add_section('artista_home_statement_image_one_section',
+    //     array(
+    //         'title' =>__('Home Statement Image 1'),
+    //         'priority' => 30
+    //     ));
+    // $wp_customize->add_setting('artista_home_statement_image_one', array());
+    // $wp_customize->add_control(new WP_Customize_Image_Control(
+    //     $wp_customize,
+    //     'artista_home_statement_image_one_ctrl',
+    //     array(
+    //         'section' => 'artista_home_statement_image_one_section',
+    //         'label' => __('Home Image 1'),
+    //         'settings' => 'artista_home_statement_image_one'
+    //     ),
 
         //Home Image 2
 
-        $wp_customize->add_section('artista_home_statement_image_two_section',
-            array(
-                'title' =>__('Home Statement Image 2'),
-                'priority' => 30
-            ),
-        $wp_customize->add_setting('artista_home_statement_image_two', array()),
-        $wp_customize->add_control(new WP_Customize_Image_Control(
-        $wp_customize,
-        'artista_home_statement_image_two_ctrl',
-        array(
-            'section' => 'artista_home_statement_image_two_section',
-            'label' => __('Home Image 2'),
-            'settings' => 'artista_home_statement_image_two'
-        )))
-        )
-    ));
+    //     $wp_customize->add_section('artista_home_statement_image_two_section',
+    //         array(
+    //             'title' =>__('Home Statement Image 2'),
+    //             'priority' => 30
+    //         ),
+    //     $wp_customize->add_setting('artista_home_statement_image_two', array()),
+    //     $wp_customize->add_control(new WP_Customize_Image_Control(
+    //     $wp_customize,
+    //     'artista_home_statement_image_two_ctrl',
+    //     array(
+    //         'section' => 'artista_home_statement_image_two_section',
+    //         'label' => __('Home Image 2'),
+    //         'settings' => 'artista_home_statement_image_two'
+    //     )))
+    //     )
+    // ));
     //----------------Products----------------//
 }
 

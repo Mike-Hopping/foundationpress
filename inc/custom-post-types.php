@@ -37,18 +37,6 @@ function artista_create_post_types(){
                 'thumbnail'
                 )
             )
-            // );
-    // create new taxonomy for custom post types
-    // register_taxonomy(
-    //     'media',
-    //     'artista_opportunity',
-    //     array(
-    //         'label' => __('Opportunities'),
-    //         'labels' => array(
-    //             'name' => __('Opportunities'),
-    //             'singular_name' => __('Opportunity')
-    //         )
-    //     )
     );
 }
 

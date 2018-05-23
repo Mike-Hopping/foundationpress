@@ -24,6 +24,9 @@ $about_image = get_theme_mod('artista_about_image');
         echo wpautop($about_text);
         endif; ?>
     </div>
+    <div class="donate-btn-container">
+		<a href="http://localhost/wordpress/join/" button type="button" class="donate-btn">Donate</button></a>
+	</div>
    <div class="about-img">
         <img class="about-img" src="<?php echo $about_image ?>">
    </div>

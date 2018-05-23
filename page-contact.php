@@ -35,7 +35,12 @@ $contact_text = get_theme_mod('artista_contact_text');
                 echo wpautop($contact_text);
             endif; ?>
         </div>
-        <a href=""><strong>Please click here to enquire</strong></a>
+        <div class="input-group">
+    <span class="input-group-label">Leave a Message</span>
+    <input class="input-group-field" type="url">
+    <div class="input-group-button">
+      <input type="submit" class="button" value="Submit">
+    </div>
     </div>
     </div>
     <script src="https://maps.googleapis.com/maps/api/js?key=AIzaSyCZHMT4UAIYHOtBxAh-BnJoZ8vvEDPWYYM&callback=myMap"></script>
