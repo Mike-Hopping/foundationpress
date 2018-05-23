@@ -25,6 +25,9 @@
 
 		<?php /* Start the Loop */ ?>
 		<?php while ( have_posts() ) : the_post(); ?>
+		<a href="<?php echo site_url() . '/template-parts/' . $post->post_name?>">
+            <img alt="<?php the_title(); ?>" src="<?php the_post_thumbnail_url(); ?>">
+            </a>
 			<?php get_template_part( 'template-parts/content', get_post_format() ); ?>
 		<?php endwhile; ?>
 
