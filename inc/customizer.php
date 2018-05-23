@@ -1,10 +1,7 @@
 <?php
-/**
- * Created by PhpStorm.
- * User: 845856208
- * Date: 16/04/2018
- * Time: 1:20 PM
- */
+/*
+Template Name: Customizer
+*/
 
 function artista_customize_register($wp_customize){
 //-------------About--------------//
@@ -95,6 +92,20 @@ function artista_customize_register($wp_customize){
         )
     );
 
+     //Join Text
+    $wp_customize->add_section('artista_join_section',
+        array(
+            'title' =>__('Join'),
+            'priority' => 30
+        ));
+    $wp_customize->add_setting('artista_join_text', array());
+    $wp_customize->add_control('artista_join_text_ctrl', array(
+            'type' => 'textarea',
+            'section' => 'artista_join_section',
+            'label' => __('Join Us Text'),
+            'settings' => 'artista_join_text'
+        )
+    );
     //Home
 
     $wp_customize->add_section('artista_home_statement_section',
@@ -180,7 +191,6 @@ function artista_customize_register($wp_customize){
     //     )))
     //     )
     // ));
-    //----------------Products----------------//
 }
 
 add_action('customize_register', 'artista_customize_register');
