@@ -12,35 +12,29 @@ $home_about_text = get_theme_mod('artista_home_about_text');
 $home_donate_text = get_theme_mod('artista_home_donate_text')
 ?>
 	<div class="hero-image">
-		<?php
+		<!-- <?php
 		$bg = array('colin-1.jpg', 'Fiona-Gray-Flight-of-Light-Promo-Image-1024x714.jpg', 'coffee-perhaps.jpg', 'act-of-passage.jpg', 'Chora-Carleton-watercolour-1024x576.jpg', 'taniwha.jpg', 'Laura-Papple.jpg' ); // array of filenames
 		$i = rand(0, count($bg)-1);
 		$selectedBg = "$bg[$i]";
+		?> -->
+		
+		<?php
+		$args = array(
+		$loop = new WP_Query(array(
+		'post_type' => 'artista_exhibition',
+		'posts_per_page' => 1,
+		'orderby'=>'rand'
+		)
+		));
 		?>
+		<?php while ( $loop->have_posts() ) : $loop->the_post(); ?>
+		<?php the_post_thumbnail('featured-large' ); ?>
 		
-		<style>
-		.hero-image{
-			background: url(http://localhost/wordpress/wp-content/uploads/2018/05/<?php echo $selectedBg; ?>)  no-repeat;
-			background-size: cover;
-			width: 80vw;
-			height: 60vh;
-			margin: 0 auto;
-			margin-top: 130px;
-			}
-			@media only screen and (max-width: 1280px){
-			.hero-image{
-			height: 50vh;
-			}
-			}
-			@media only screen and (max-width: 768px){
-			.hero-image{
-			height: 40vh;
-			}
-			}
-		</style>
-		
+
 		<div class="marketing">
 		<div class="tagline">
+		<h1><?php the_title(); ?></h1>
+		<?php endwhile; ?>
 		<!-- <?php 
 		$txt = array("Colin McCahon | Kitchener St", "Fiona Gray | Flight of Light", "Erica Van Zon | Coffee Perhaps", "Acts of Passage | Te Tuhi Offsite", "Chora Luz Carleton | Gloaming", "Owen Mapp | Dragons & Taniwha", "Kirsty Lillico |Happy Together" ); // array of filenames
 		$i = rand(0, count($txt)-1); 
@@ -85,7 +79,7 @@ $home_donate_text = get_theme_mod('artista_home_donate_text')
 					echo wpautop($home_donate_text);
 				endif; ?>
 				<div class="donate-btn-container">
-				<button type="button" class="donate-btn">Donate</button>
+				<a href="http://localhost/wordpress/donate/" button type="button" class="donate-btn">Donate</button></a>
 				</div>
 		<section>
 			<?php
