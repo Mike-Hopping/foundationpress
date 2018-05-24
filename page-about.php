@@ -12,7 +12,6 @@ if ( has_post_thumbnail( $post->ID ) ) : ?>
 <?php endif;
 
 $about_text = get_theme_mod('artista_about_text');
-$about_image = get_theme_mod('artista_about_image');
 ?>
 <div class="main-container">
     <main class="main-content">
@@ -27,9 +26,6 @@ $about_image = get_theme_mod('artista_about_image');
     <div class="donate-btn-container">
 		<a href="http://localhost/wordpress/join/" button type="button" class="donate-btn">Donate</button></a>
 	</div>
-   <div class="about-img">
-        <img class="about-img" src="<?php echo $about_image ?>">
-   </div>
     </div>
 </div>
     </div>

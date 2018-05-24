@@ -60,22 +60,6 @@ function artista_customize_register($wp_customize){
         )
     );
 
-    //Testimonials
-
-    $wp_customize->add_section('artista_testimonials_section',
-        array(
-            'title' =>__('Testimonials'),
-            'priority' => 30
-        ));
-    $wp_customize->add_setting('artista_testimonials_text', array());
-    $wp_customize->add_control('artista_testimonials_text_ctrl', array(
-            'type' => 'textarea',
-            'section' => 'artista_testimonials_section',
-            'label' => __('Testimonials Text'),
-            'settings' => 'artista_testimonials_text'
-        )
-    );
-
     //Contact
 
     $wp_customize->add_section('artista_contact_section',
