@@ -54,8 +54,13 @@ $join_text = get_theme_mod('artista_join_text');
                     <fieldset class="cell medium-6">
                         <button class="button" type="submit" value="Submit">Login</button>
                     </fieldset>
+                    <fieldset class="cell medium-6">
+                    <a href="http://localhost/wordpress/join/">Join Us</a>
+                    </fieldset>
                     <div>
+                    <div class="join-link">
                     <a href="http://localhost/wordpress/join/">Forgot Password?</a>
+                    </div>
                     </div>
                     <div class="join-donate-btn">
                         <a href="http://localhost/wordpress/join/" button type="button" class="donate-btn">Donate</button></a>

@@ -53,6 +53,7 @@
     .tagline {
       @include breakpoint(small) {
         @include xy-cell(8);
+        width: 100%;
       }
   
       @include breakpoint(medium) {
@@ -73,6 +74,10 @@
       }
   
       @include breakpoint(medium) {
+        // font-size: 1.875rem;
+      }
+
+      @include breakpoint(large) {
         font-size: 1.875rem;
       }
       
@@ -236,7 +241,7 @@
   }
   @media only screen and (max-width: 786px){
     .home-logo{
-      margin-top:20px;
+      margin-top:0px;
     }
   }
   .featured-hero{
@@ -349,7 +354,7 @@
       height: 50vh;
       }
     }
-    @media only screen and (max-width: 768px){
+    @media only screen and (max-width: 640px){
       .hero-image{
       display: none;
       }
@@ -357,13 +362,9 @@
     .front-hero .marketing{
       margin-top: -50vh;
     }
-    @media only screen and (max-width: 1280px){
-      .marketing{
-      display: none;
-      }
+    .front-hero .tagline{
+
     }
     @media only screen and (max-width: 768px){
-      .marketing{
-      display: none;
-      }
+      width: 100%;
     }
