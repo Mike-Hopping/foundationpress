@@ -1,6 +1,6 @@
 // Page header
 .front-hero {
-    background: url('http://localhost/wordpress/wp-content/uploads/2018/05/fletcher.jpg') bottom center;
+    background: url('http://michael.hopping.wux.yoobee.net.nz/artistsalliance/wp-content/uploads/2018/05/fletcher.jpg') bottom center;
     .marketing {
       @include xy-grid-container(55rem);
       @include xy-grid;
@@ -11,7 +11,7 @@
       color: #fff;
     }
     @include breakpoint(small) {
-      background: url('http://localhost/wordpress/wp-content/uploads/2018/05/fletcher.jpg') bottom center;
+      background: url('http://michael.hopping.wux.yoobee.net.nz/artistsalliance/wp-content/uploads/2018/05/fletcher.jpg') bottom center;
       background-size: cover;
       background-position: bottom;
     //   padding: rem-calc(65%) 0;
@@ -22,7 +22,7 @@
     }
   
     @include breakpoint(medium) {
-      background: url('http://localhost/wordpress/wp-content/uploads/2018/05/fletcher.jpg') bottom center;
+      background: url('http://michael.hopping.wux.yoobee.net.nz/artistsalliance/wp-content/uploads/2018/05/fletcher.jpg') bottom center;
       background-size: cover;
       background-position: center;
       height: 100vh;
@@ -225,7 +225,7 @@
     // position: relative;
   }
   .home-logo{
-    background: url('http://localhost/wordpress/wp-content/uploads/2018/05/headText.gif') no-repeat;
+    background: url('http://michael.hopping.wux.yoobee.net.nz/artistsalliance/wp-content/uploads/2018/05/headText.gif') no-repeat;
     background-position: center;
     width: 100%;
     height: 110px;
@@ -344,7 +344,6 @@
     color: #1779ba;
   }
   .hero-image{
-    // background: url(http://localhost/wordpress/wp-content/uploads/2018/05/Laura-Papple.jpg) no-repeat;
     background-size: cover;
     width: 80vw;
     height: 50vh;
@@ -373,4 +372,13 @@
     }
     @media only screen and (max-width: 768px){
       width: 100%;
+    }
+    .menu.vertical {
+      -webkit-flex-wrap: nowrap;
+      -ms-flex-wrap: nowrap;
+      flex-wrap: nowrap;
+      -webkit-flex-direction: column;
+      -ms-flex-direction: column;
+      flex-direction: column;
+      z-index: 10;
     }
