@@ -6,8 +6,6 @@ Template Name: Home
 <header class="front-hero" role="banner">
 	<?php get_header(); 
 $home_statement_text = get_theme_mod('artista_home_statement_text');
-// $home_image_one = get_theme_mod('artista_home_statement_image_one');
-// $home_image_two = get_theme_mod('artista_home_statement_image_two');
 $home_about_text = get_theme_mod('artista_home_about_text');
 $home_donate_text = get_theme_mod('artista_home_donate_text')
 ?>
@@ -33,8 +31,10 @@ $home_donate_text = get_theme_mod('artista_home_donate_text')
 		<div class="cta-container">
 			<div class="callout">
 				<p>View Upcoming Exhibitions and Opportunities</p>
-					<a href="http://localhost/wordpress/exhibitions/" class="button">Exhibitions</a>
-					<a href="http://localhost/wordpress/opportunities/" class="button">Opportunities</a>
+					<!-- <a href="http://localhost/wordpress/exhibitions/" class="button">Exhibitions</a>
+					<a href="http://localhost/wordpress/opportunities/" class="button">Opportunities</a> -->
+					<a href="http://michael.hopping.wux.yoobee.net.nz/artistsalliance/exhibitions/" class="button">Exhibitions</a>
+					<a href="http://michael.hopping.wux.yoobee.net.nz/artistsalliance/opportunities/" class="button">Opportunities</a>
 			</div>
 		</div>
 </header>
@@ -64,7 +64,8 @@ $home_donate_text = get_theme_mod('artista_home_donate_text')
 					echo wpautop($home_donate_text);
 				endif; ?>
 				<div class="donate-btn-container">
-				<a href="http://localhost/wordpress/join/" button type="button" class="donate-btn">Donate</button></a>
+				<!-- <a href="http://localhost/wordpress/join/" button type="button" class="donate-btn">Donate</button></a> -->
+				<a href="http://michael.hopping.wux.yoobee.net.nz/artistsalliance/join/" button type="button" class="donate-btn">Donate</button></a>
 				</div>
 		<section>
 			

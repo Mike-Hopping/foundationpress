@@ -1,5 +1,6 @@
 // Page header
 .front-hero {
+    // background: url('http://localhost/wordpress/wp-content/uploads/2018/05/fletcher.jpg') bottom center;
     background: url('http://michael.hopping.wux.yoobee.net.nz/artistsalliance/wp-content/uploads/2018/05/fletcher.jpg') bottom center;
     .marketing {
       @include xy-grid-container(55rem);
@@ -11,6 +12,7 @@
       color: #fff;
     }
     @include breakpoint(small) {
+      // background: url('http://localhost/wordpress/wp-content/uploads/2018/05/fletcher.jpg') bottom center;
       background: url('http://michael.hopping.wux.yoobee.net.nz/artistsalliance/wp-content/uploads/2018/05/fletcher.jpg') bottom center;
       background-size: cover;
       background-position: bottom;
@@ -22,6 +24,7 @@
     }
   
     @include breakpoint(medium) {
+      // background: url('http://localhost/wordpress/wp-content/uploads/2018/05/fletcher.jpg') bottom center;
       background: url('http://michael.hopping.wux.yoobee.net.nz/artistsalliance/wp-content/uploads/2018/05/fletcher.jpg') bottom center;
       background-size: cover;
       background-position: center;
@@ -225,6 +228,7 @@
     // position: relative;
   }
   .home-logo{
+    // background: url('http://localhost/wordpress/wp-content/uploads/2018/05/headText.gif') no-repeat;
     background: url('http://michael.hopping.wux.yoobee.net.nz/artistsalliance/wp-content/uploads/2018/05/headText.gif') no-repeat;
     background-position: center;
     width: 100%;
@@ -381,4 +385,5 @@
       -ms-flex-direction: column;
       flex-direction: column;
       z-index: 10;
+      background-color: #e2e2e2;
     }

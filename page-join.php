@@ -7,7 +7,7 @@ Template Name: Join
 if ( has_post_thumbnail( $post->ID ) ) : ?>
 	<header class="featured-hero" role="banner" data-interchange="[<?php the_post_thumbnail_url( 'featured-small' ); ?>, small], [<?php the_post_thumbnail_url( 'featured-medium' ); ?>, medium], [<?php the_post_thumbnail_url( 'featured-large' ); ?>, large], [<?php the_post_thumbnail_url( 'featured-xlarge' ); ?>, xlarge]">
     <?php get_header(); ?>
-    <a href="http://localhost/wordpress/"><div class="home-logo"></div></a>
+    <a href="http://michael.hopping.wux.yoobee.net.nz/artistsalliance"><div class="home-logo"></div></a>
 </header>
 <?php endif;
 
@@ -23,7 +23,7 @@ $join_text = get_theme_mod('artista_join_text');
                 echo wpautop($join_text);
                 endif; ?>
             </div>
-            <a href="http://localhost/wordpress/join/" class="button">Subscribe Now</a>
+            <a href="http://michael.hopping.wux.yoobee.net.nz/artistsalliance/join/" class="button">Subscribe Now</a>
             </div>
             <div class="signup-container">
                 <h5>Login</h5>
@@ -55,15 +55,15 @@ $join_text = get_theme_mod('artista_join_text');
                         <button class="button" type="submit" value="Submit">Login</button>
                     </fieldset>
                     <fieldset class="cell medium-6">
-                    <a href="http://localhost/wordpress/join/">Join Us</a>
+                    <a href="http://michael.hopping.wux.yoobee.net.nz/artistsalliance/join/">Join Us</a>
                     </fieldset>
                     <div>
                     <div class="join-link">
-                    <a href="http://localhost/wordpress/join/">Forgot Password?</a>
+                    <a href="http://michael.hopping.wux.yoobee.net.nz/artistsalliance/join/">Forgot Password?</a>
                     </div>
                     </div>
                     <div class="join-donate-btn">
-                        <a href="http://localhost/wordpress/join/" button type="button" class="donate-btn">Donate</button></a>
+                        <a href="http://michael.hopping.wux.yoobee.net.nz/artistsalliance/join/" button type="button" class="donate-btn">Donate</button></a>
                     </div>
             </div>
         </div>

@@ -7,7 +7,7 @@ Template Name: Opportunities
 if ( has_post_thumbnail( $post->ID ) ) : ?>
 	<header class="featured-hero" role="banner" data-interchange="[<?php the_post_thumbnail_url( 'featured-small' ); ?>, small], [<?php the_post_thumbnail_url( 'featured-medium' ); ?>, medium], [<?php the_post_thumbnail_url( 'featured-large' ); ?>, large], [<?php the_post_thumbnail_url( 'featured-xlarge' ); ?>, xlarge]">
     <?php get_header(); ?>
-    <a href="http://localhost/wordpress/"><div class="home-logo"></div></a>
+    <a href="http://michael.hopping.wux.yoobee.net.nz/artistsalliance"><div class="home-logo"></div></a>
 </header>
 <?php endif;
 get_header()

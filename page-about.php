@@ -7,7 +7,7 @@ Template Name: About
 if ( has_post_thumbnail( $post->ID ) ) : ?>
 	<header class="featured-hero" role="banner" data-interchange="[<?php the_post_thumbnail_url( 'featured-small' ); ?>, small], [<?php the_post_thumbnail_url( 'featured-medium' ); ?>, medium], [<?php the_post_thumbnail_url( 'featured-large' ); ?>, large], [<?php the_post_thumbnail_url( 'featured-xlarge' ); ?>, xlarge]">
     <?php get_header(); ?>
-    <a href="http://localhost/wordpress/"><div class="home-logo"></div></a>
+    <a href="http://michael.hopping.wux.yoobee.net.nz/artistsalliance/"><div class="home-logo"></div></a>
 </header>
 <?php endif;
 
@@ -24,7 +24,8 @@ $about_text = get_theme_mod('artista_about_text');
         endif; ?>
     </div>
     <div class="donate-btn-container">
-		<a href="http://localhost/wordpress/join/" button type="button" class="donate-btn">Donate</button></a>
+		<!-- <a href="http://localhost/wordpress/join/" button type="button" class="donate-btn">Donate</button></a> -->
+        <a href="http://michael.hopping.wux.yoobee.net.nz/artistsalliance/join/" button type="button" class="donate-btn">Donate</button></a>
 	</div>
     </div>
 </div>

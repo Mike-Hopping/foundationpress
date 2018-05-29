@@ -49,6 +49,6 @@
 				<?php endif; ?>
 			</div>
 		</nav>
-		<div class="home-logo"><a class="logo" href="http://localhost/wordpress/"></a></div>
+		<div class="home-logo"><a class="logo" href="http://michael.hopping.wux.yoobee.net.nz/artistsalliance"></a></div>
 		</header>
 		
